@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const state = { isReady: false };
-const PORT = process.env["PORT"] ? process.env("PORT") : 8080;
+const PORT = process.env["PORT"] ? process.env("PORT") : 3000;
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 server.listen(PORT);
